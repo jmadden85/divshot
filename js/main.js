@@ -1,2 +1,1 @@
-var app = angular.module('tester', ['ngRoute']);
-console.log('fired');
+var app = angular.module('app', ['ngRoute', 'ngResource']);

@@ -1,4 +1,5 @@
-adbsdfg
-<!--<div ng-repeate="book in main.books">-->
-<!--r-->
-<!--</div>-->
+<div ng-repeat="(key, value) in main.books">
+    <h3>{{value.title}}</h3>
+    <p>Published: {{value.published}}</p>
+    <img src="{{value.imgURL}}" />
+</div>

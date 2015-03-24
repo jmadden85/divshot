@@ -7,7 +7,7 @@ app.config(function ($routeProvider, $locationProvider) {
       controller: 'BooksCtrl'
     })
     .otherwise({
-      redirectTo: '/elsewhere'
+      redirectTo: '/nodeCMS/public'
     });
   $locationProvider.html5Mode({
     enabled: true,
