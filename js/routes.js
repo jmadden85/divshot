@@ -1,13 +1,13 @@
+'use strict';
 app.config(function ($routeProvider, $locationProvider) {
-  console.log($routeProvider);
   $routeProvider
-    .when('/', {
-      templateUrl: 'books.html',
+    .when('/divshot', {
+      templateUrl: '/divshot/books.html',
       controllerAs: 'main',
       controller: 'BooksCtrl'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/elsewhere'
     });
   $locationProvider.html5Mode({
     enabled: true,
