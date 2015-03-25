@@ -1,7 +1,7 @@
 'use strict';
 app.factory('Goosebumps', function ($resource) {
   var service = $resource;
-  return service('divshot/server/:title.json', {}, {
+  return service('server/:title.json', {}, {
     query: {
       method: 'GET',
       params: {
